@@ -13,10 +13,7 @@ This tribute page to brad is an appreciation to him for being a humble person an
 [![Tribute Page Screenshot](img/screenshot.png "Tribute Page Screenshot")](https://genesisgabiola.github.io/brad-traversy/)
 
 Visit the [live preview](https://genesisgabiola.github.io/brad-traversy/).  
-Check the project in [CodePen]().
-
-
-<!-- ## Future Improvements -->
+Check the project in [CodePen](https://codepen.io/genesisgabiola/full/JjdMjZR).
 
 
 ## Contributeing
