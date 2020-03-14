@@ -42,6 +42,18 @@ a {
   font-size: 2rem;
 }
 
+section#podcast {
+  background: url('./img/section-bg.jpg') no-repeat center/cover;
+  padding: 10rem 0;
+}
+
+.gift-cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+}
+
 /* Showcase */
 #showcase {
   padding: 0;
@@ -112,6 +124,11 @@ a {
 
 .text-light {
   color: var(--light-color);
+}
+
+.bg-light {
+  background: var(--light-color);
+  color: #333;
 }
 
 .mb {
