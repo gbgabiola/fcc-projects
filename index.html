@@ -6,45 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <title>uPlayer | Product Landing Page</title>
+  <title>UPlayer | Product Landing Page</title>
 </head>
 
 <body>
   <!-- Showcase & Nav -->
   <div id="showcase">
-    <header>
-      <nav class='cf'>
+    <header id="header">
+      <nav id="nav-bar" class='cf'>
         <ul class='cf'>
           <li class="hide-on-small">
-            <a href='#showcase'>uPlayer</a>
+            <a class="nav-link" href='#showcase'><img id="header-img" class="logo" src="./img/logo.png" alt="Logo"></a>
           </li>
           <li>
-            <a href='#showcase'>Overview</a>
+            <a class="nav-link" href='#showcase'>Overview</a>
           </li>
           <li>
-            <a href='#music'>Music</a>
+            <a class="nav-link" href='#music'>Music</a>
           </li>
           <li>
-            <a href='#video'>Video</a>
+            <a class="nav-link" href='#video-section'>Video</a>
           </li>
           <li>
-            <a href='#gift-cards'>Gift Cards</a>
+            <a class="nav-link" href='#gift-cards'>Gift Cards</a>
           </li>
         </ul>
-        <a href='#' id='openup'>uPlayer</a>
+        <a href='#' id='openup'>UPlayer</a>
       </nav>
     </header>
 
     <div class="section-main container">
-      <h1>uPlayer.</h1>
+      <h1>UPlayer.</h1>
       <h2>Music, movies, TV shows, and podcasts take center stage.</h2>
-      <p class="lead hide-on-small">uPlayer forever changed the way people experienced music, movies, TV shows, and
+      <p class="lead hide-on-small">UPlayer forever changed the way people experienced music, movies, TV shows, and
         podcasts. It all
         changes
-        again with three all‑new, dedicated apps for uMusic, uTV, and uPodcasts – each designed from the
+        again with three all‑new, dedicated apps for GTech Music, GTech TV, and GTech Podcasts – each designed from the
         ground up to be the best way to enjoy entertainment on your Mac or PC. And rest assured; everything you had in
         your
-        uPlayer library is still accessible in each app. Cloud network seamlessly syncs everything across your devices –
+        UPlayer library is still accessible in each app. Cloud network seamlessly syncs everything across your devices –
         or you
         can back up, restore, and sync by connecting the device directly to your Mac or PC.</p>
     </div>
@@ -57,26 +57,34 @@
         <i class="fas fa-music"></i> Music
       </h2>
       <h3>Discover and listen. In perfect harmony.</h3>
-      <p class="lead">The new uMusic app is the ultimate music streaming experience on Mac and PC. Explore a library of
+      <p class="lead">The new GTech Music app is the ultimate music streaming experience on Mac and PC. Explore a
+        library of
         60 million songs,
         discover new artists and tracks, find the perfect playlist, download and listen offline, or enjoy all the music
         you've collected over the years. And find it all in your music library on all your devices.</p>
       <a href="#" class="btn btn-primary mb">Start your free trial</a>
-      <p class="text-light">uMusic is available in uPlayer, and for iOS and Android devices.</p>
+      <p class="text-light">GTech Music is available in UPlayer, and for iOS and Android devices.</p>
       <img src="./img/mockup1.png" alt="Mockup Image 1">
     </div>
   </section>
 
   <!-- Video Section -->
-  <section id="video" class="section bg-light">
+  <section id="video-section" class="section bg-light">
     <div class="container">
       <h3>All your TV. All in one app. Let the shows begin.</h3>
-      <p class="lead">The uTV app for Mac and PC is the new home for all your favorite movies. Watch everything directly
+      <p class="lead">The GTech TV app for Mac and PC is the new home for all your favorite movies. Watch everything
+        directly
         in the app or enjoy it offline, and discover the best of what's on in the Watch Now tab. You can even pick up
         where you left off on any screen, across all your devices. And for the first time, 4K2 and DolbyAtmos3–supported
         movies are available on Mac and PC.</p>
       <a href="#" class="btn btn-secondary">Read More</a>
-      <img src="./img/mockup2.png" alt="Mockup Image 2">
+      <div class="video-wrapper">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/zQH2II9CtZg" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <!-- <img src="./img/mockup2.png" alt="Mockup Image 2"> -->
+
     </div>
   </section>
 
@@ -85,7 +93,8 @@
     <div class="container">
       <h3>Discover free audio stories that entertain, inform, and inspire.</h3>
       <p class="lead">More than 700,000 of the best entertainment, comedy, news, and sports shows are now available on
-        your Mac and PC with uPodcasts. Search for podcasts by title, topic, guest, host, content, and more. Subscribe
+        your Mac and PC with GTech Podcasts. Search for podcasts by title, topic, guest, host, content, and more.
+        Subscribe
         and be notified as soon as new episodes become available. And in the Listen Now tab, you can easily pick up
         where you left off across all your devices.</p>
     </div>
@@ -103,7 +112,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni unde veniam ut quas eaque aperiam? Suscipit
             deserunt maxime corporis sequi fuga non, provident, et officiis enim, vitae modi doloribus nulla velit
             veniam itaque rem nobis. Quod sit culpa porro sunt!</p>
-          <p>Already have an uPlayer Music Gift Card?</p>
+          <p>Already have an UPlayer Music Gift Card?</p>
           <hr>
           <a href="#" class="text-secondary">
             <i class="fas fa-chevron-right"></i> Redeem
@@ -114,11 +123,123 @@
   </section>
 
   <!-- Footer Section -->
+  <!-- <footer>
+    <div class="container">
+      <div class="footer-cols">
+        <ul>
+          <li>Shop & Learn</li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Shows</a></li>
+          <li><a href="#">Apps</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+
+        <ul>
+          <li>GTech Store</li>
+          <li><a href="#">Find a Store</a></li>
+          <li><a href="#">Today at GTech</a></li>
+          <li><a href="#">GTech Camp</a></li>
+          <li><a href="#">Financing</a></li>
+          <li><a href="#">Order Status</a></li>
+        </ul>
+
+        <ul>
+          <li>Education & Business</li>
+          <li><a href="#">GTech & Education</a></li>
+          <li><a href="#">Shop For College</a></li>
+          <li><a href="#">GTech & Business</a></li>
+          <li><a href="#">Shop For Business</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+
+        <ul>
+          <li>About GTech</li>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">GTech Leadership</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact GTech</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <div class="container">
+        Copyright &copy; 2020 GTech UPlayer
+      </div>
+    </div>
+  </footer> -->
+
+  <div class="container">
+
+    <footer>
+      <!-- Footer main -->
+      <section class="ft-main">
+        <div class="ft-main-item">
+          <h2 class="ft-title">About</h2>
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Resources</h2>
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">eBooks</a></li>
+            <li><a href="#">Webinars</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Contact</h2>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Advertise</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Stay Updated</h2>
+          <p>Subscribe to our newsletter to get our latest news.</p>
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" type="email" name="email" placeholder="Enter email address">
+            <input id="submit" type="submit" value="Subscribe">
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer social -->
+      <section class="ft-social">
+        <ul class="ft-social-list">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-github"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </section>
+
+      <!-- Footer legal -->
+      <section class="ft-legal">
+        <ul class="ft-legal-list">
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li>&copy; 2019 Copyright Nowrap Inc.</li>
+        </ul>
+      </section>
+    </footer>
+  </div>
 
   <script src="https://kit.fontawesome.com/a489e0e418.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="main.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
