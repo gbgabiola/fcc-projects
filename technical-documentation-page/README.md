@@ -10,7 +10,7 @@ It will also serve as one of the projects to complete freeCodeCamp's Responsive 
 - HTML5
 - CSS3
 
-[![Technical Documentation Page Preview](img/preview.png "Technical Documentation Page Preview")](https://genesisgabiola.github.io/fcc-projects/technical-documentation-page/)
+[![Technical Documentation Page Preview](img/preview.gif "Technical Documentation Page Preview")](https://genesisgabiola.github.io/fcc-projects/technical-documentation-page/)
 
 Visit the [live site](https://genesisgabiola.github.io/fcc-projects/technical-documentation-page/).  
 Check the project in [CodePen](https://codepen.io/genesisgabiola/full/pQReKm).
