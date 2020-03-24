@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=MontserratL400,500&display=swap');
+
+:root {
+  --primary-color: #121212;
+  --secondary-color: #fae6d1;
+  /* --secondary-color: #eeeee0; */
+  --tertiary-color: #777;
+  --light-color: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  display: flex;
+  color: var(--light-color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  min-width: 280px;
+  background-color: var(--primary-color);
+  font-size: .9rem;
+  border-right: 2px solid var(--tertiary-color);
+  height: 100vh;
+}
+
+nav header {
+  padding: .8rem;
+}
+
+nav li {
+
+  list-style: none;
+}
+
+nav li:hover,
+nav a:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color)
+}
+
+nav a {
+  display: block;
+  padding: .8rem 1rem;
+  color: var(--light-color);
+  text-decoration: none;
+  border-top: 2px solid var(--tertiary-color);
+}
+
+main {
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: var(--primary-color);
+}
+
+header {
+  padding-bottom: 1rem;
+  color: var(--secondary-color);
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+section {
+  padding: 1.5rem 1.5rem 1rem;
+  line-height: 1.5;
+}
+
+main li {
+  padding-bottom: .3rem;
+  margin-left: 2rem;
+}
+
+p {
+  margin-bottom: .8rem;
+}
+
+pre {
+  padding: .6rem;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-left: 8px solid var(--tertiary-color);
+  white-space: pre-line;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%;
+    height: 275px;
+    overflow-y: scroll;
+    border-right: none;
+    border-bottom: 2px solid var(--tertiary-color);
+  }
+
+  main {
+    width: 100%;
+    height: auto;
+    overflow-y: none;
+  }
+}
