@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+  /* #74b3ce-#172a3a-#004346-#09bc8a-#816c61 */
+  /* #db5461-#ffd9ce-#8ef9f3-#171738-#816c61 */
+  /* #0e1116-#374a67-#616283-#9e7b9b-#cb9cf2 */
+  /* #d6c3c9-#98473e-#a37c40-#9e7b9b-#07090f */
+  /* #9c95dc-#228cdb-#0b7189-#9e7b9b-#170a1c */
+  /* #0c120c-#c20114-#c7d6d5-#9e7b9b-#ecebf3 */
+  /* #b3001b-#262626-#255c99-#7ea3cc-#ccad8f */
+  /* #f45b69-#f6e8ea-#22181c-#5a0001-#f13030 */
+  /* #f03a47-#f6f4f3-#276fbf-#183059-#816c61 */
+
+  /* #28262c-#d4c2fc-#f9f5ff-#9e7b9b-#14248a */
+  /* #b2abf2-#89043d-#2fe6de-#1c3041-#18f2b2 */
+  /* #222222-#ffffff-#1c5d99-#639fab-#bbcde5 */
+  /* #292f36-#4ecdc4-#f7fff7-#ff6b6b-#ffe66d */
+
+  --primary-color: #4ecdc4;
+  --secondary-color: #ff6b6b;
+  --tertiary-color: #ffe66d;
+  /* hover .6 */
+  --dark-color: #292f36;
+  --light-color: #f7fff7;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background-color: var(--light-color);
+  font-family: 'Lato', sans-serif;
+  color: var(--dark-color)
+}
+
+nav {
+  background-color: var(--dark-color);
+  padding: 5px 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-brand a:hover {
+  text-decoration: none;
+}
+
+.nav-menu li {
+  font-size: 1rem;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+
+.nav-brand a,
+.toggle a {
+  font-size: 20px;
+}
+
+/* Mobile Nav */
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  width: 100%;
+  text-align: center;
+  order: 2;
+  display: none;
+}
+
+.nav-item.active {
+  display: block;
+}
+
+/* Toggle Nav */
+.toggle {
+  cursor: pointer;
+}
+
+.bars {
+  background: var(--secondary-color);
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.bars:before,
+.bars:after {
+  background: var(--tertiary-color);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.bars:before {
+  top: 5px;
+}
+
+.bars:after {
+  top: -5px;
+}
+
+/* Tablet Nav */
+@media all and (min-width: 468px) {
+  .nav-menu {
+    justify-content: center;
+  }
+
+  .nav-brand {
+    flex: 1;
+  }
+}
+
+/* Desktop Nav */
+@media all and (min-width: 768px) {
+  .nav-item {
+    display: block;
+    width: auto;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .nav-menu li {
+    padding: 15px 10px;
+  }
+}
+
+header {
+  height: 100vh;
+}
+
+footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 10px;
+  text-align: center;
+}
